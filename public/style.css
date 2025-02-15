@@ -1,0 +1,80 @@
+:root {
+  --primary-color: #789db6; /* Replace with your preferred color */
+}
+
+body{
+  background-color: var(--primary-color);
+}
+/* Styels for Oswald font with different weights */
+.oswald-thin {
+  font-family: "Oswald", serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.oswald-extra-light {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+  }
+
+.oswald-light {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 300;
+    font-style: normal;
+  }
+
+.oswald-light2 {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 350;
+    font-style: normal;
+  }
+
+.oswald-regular {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+.oswald-medium {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+  }
+
+.oswald-semi-bold {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.oswald-bold {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+  }
+
+.oswald-extra-bold {
+    font-family: "Oswald", serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+/* for the 1st card for reiki ideals */
+.reiki-card{
+  background-color: #FFD966;
+  padding:30px;
+  border-radius:3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  position:relative;
+  margin:20px auto;
+}

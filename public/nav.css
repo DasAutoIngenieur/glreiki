@@ -1,0 +1,119 @@
+nav.primary-navigation {
+    margin: 0 auto;
+    text-align: center;
+    font-size: 16px;
+  
+    ul {
+      padding: 0;
+      margin: 0;
+      list-style: none;
+      display: inline-flex;
+    }
+  
+    ul li {
+      position: relative; 
+      padding: 0 30px;
+      border-left: 2px solid #FDBD41;
+      font-family: arvo;
+  
+      &:first-child {
+        border-left: none; 
+      }
+  
+      a {
+        color: #01A89E;
+        text-decoration: none;
+        &:hover {
+          color: #FDBD41;
+          transition: all 0.23s ease;
+        }
+      }
+  
+      &:hover {
+        cursor: pointer;
+      }
+  
+      
+      ul {
+        position: absolute; 
+        top: 100%;         
+        left: 0;
+        min-width: 200px;  
+        background: white;
+        padding: 1rem 0;   
+        margin: 0;
+        box-shadow: 0 3px 5px -1px #ccc;
+  
+        visibility: hidden;
+        opacity: 0;
+        display: none;
+        transition: opacity 0.2s ease-in-out;
+        z-index: 999;      
+  
+        li {
+          border: none;     
+          margin: 0;
+          padding: 0.5rem 1.5rem;
+  
+          a:hover {
+            padding-left: 10px;
+            border-left: 2px solid #FDBD41;
+            transition: all 0.2s ease;
+          }
+        }
+      }
+  
+      
+      &:hover > ul,
+      ul:hover {
+        visibility: visible;
+        opacity: 1;
+        display: block;
+      }
+  
+
+      ul li {
+        position: relative;
+  
+       
+        ul {
+          top: 0;
+          left: 100%;       
+          /* margin-left: 0.5rem; */
+          min-width: 180px; 
+        }
+      }
+    }
+  }
+  
+  /* 
+    RESPONDING TO SMALL SCREENS:
+    Often you’ll stack everything vertically. 
+    The simplest approach is to remove absolute positioning
+    so submenus appear in a flow one beneath the other.
+  */
+  @media (max-width: 768px) {
+    nav.primary-navigation {
+      ul {
+        display: block;
+      }
+      
+      ul li {
+        display: block;
+        border-left: none;
+        border-bottom: 2px solid #01A89E; /* optional bottom border, looks better ig */
+        /* padding: 0.5rem 1rem; */
+  
+        /* For nested ULs, remove absolute to let them flow vertically */
+        ul {
+          position: static;
+          visibility: visible;
+          opacity: 1;
+          display: block;
+          box-shadow: none;
+          margin-left: 0;
+        }
+      }
+    }
+  }
+  

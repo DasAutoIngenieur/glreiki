@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en" style="background-color:#F2F2EB">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Arvo&display=swap" rel="stylesheet">
+    <!-- for nav -->
+    <link href="nav.css" rel="stylesheet">
+    
+    <!-- for product card -->
+    <link href="card.css" rel="stylesheet">
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css'>
+
+    <!-- for carousel -->
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700,900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tw-elements/css/tw-elements.min.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- for testimonials -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css" rel="stylesheet" />
+    <script>
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          fontFamily: {
+            sans: ["Roboto", "sans-serif"],
+            body: ["Roboto", "sans-serif"],
+            mono: ["ui-monospace", "monospace"],
+          },
+        },
+        corePlugins: {
+          preflight: false,
+        },
+      };
+    </script>
+
+    <title>Golden Lotus Reiki Centre</title>
+</head>
+<body style="background-color:#F2F2EB">
+  <!-- SnipCart -->
+  <script>
+    window.SnipcartSettings = {
+      publicApiKey: "YzFiNWExMDMtOGU3Yy00YWIyLWIyNjMtYjc5NzU3Y2NlODA0NjM4NzM1OTU5OTA4MTIwNjkz",
+      loadStrategy: "on-user-interaction",
+      currency: "sgd",
+      loadStrategy: "on-user-interaction",
+      timeoutDuration: 5000,
+      // addProductBehavior: "none",
+      modalStyle: "side",
+    };
+  
+    (function(){var c,d;(d=(c=window.SnipcartSettings).version)!=null||(c.version="3.0");var s,S;(S=(s=window.SnipcartSettings).timeoutDuration)!=null||(s.timeoutDuration=2750);var l,p;(p=(l=window.SnipcartSettings).domain)!=null||(l.domain="cdn.snipcart.com");var w,u;(u=(w=window.SnipcartSettings).protocol)!=null||(w.protocol="https");var m,g;(g=(m=window.SnipcartSettings).loadCSS)!=null||(m.loadCSS=!0);var y=window.SnipcartSettings.version.includes("v3.0.0-ci")||window.SnipcartSettings.version!="3.0"&&window.SnipcartSettings.version.localeCompare("3.4.0",void 0,{numeric:!0,sensitivity:"base"})===-1,f=["focus","mouseover","touchmove","scroll","keydown"];window.LoadSnipcart=o;document.readyState==="loading"?document.addEventListener("DOMContentLoaded",r):r();function r(){window.SnipcartSettings.loadStrategy?window.SnipcartSettings.loadStrategy==="on-user-interaction"&&(f.forEach(function(t){return document.addEventListener(t,o)}),setTimeout(o,window.SnipcartSettings.timeoutDuration)):o()}var a=!1;function o(){if(a)return;a=!0;let t=document.getElementsByTagName("head")[0],n=document.querySelector("#snipcart"),i=document.querySelector('src[src^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][src$="snipcart.js"]')),e=document.querySelector('link[href^="'.concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,'"][href$="snipcart.css"]'));n||(n=document.createElement("div"),n.id="snipcart",n.setAttribute("hidden","true"),document.body.appendChild(n)),h(n),i||(i=document.createElement("script"),i.src="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.js"),i.async=!0,t.appendChild(i)),!e&&window.SnipcartSettings.loadCSS&&(e=document.createElement("link"),e.rel="stylesheet",e.type="text/css",e.href="".concat(window.SnipcartSettings.protocol,"://").concat(window.SnipcartSettings.domain,"/themes/v").concat(window.SnipcartSettings.version,"/default/snipcart.css"),t.prepend(e)),f.forEach(function(v){return document.removeEventListener(v,o)})}function h(t){!y||(t.dataset.apiKey=window.SnipcartSettings.publicApiKey,window.SnipcartSettings.addProductBehavior&&(t.dataset.configAddProductBehavior=window.SnipcartSettings.addProductBehavior),window.SnipcartSettings.modalStyle&&(t.dataset.configModalStyle=window.SnipcartSettings.modalStyle),window.SnipcartSettings.currency&&(t.dataset.currency=window.SnipcartSettings.currency),window.SnipcartSettings.templatesUrl&&(t.dataset.templatesUrl=window.SnipcartSettings.templatesUrl))}})();
+  </script>
+
+    <div class="">
+      <div class="container screen pt-7 pb-">
+        <button class="snipcart-checkout"><img width="30" height="30" src="https://img.icons8.com/ios-glyphs/30/shopping-cart--v1.png" alt="cart"/></button>
+          <nav class="primary-navigation">
+            <ul><a href="index.html"><img src="final.svg"></a></ul>
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="reiki.html">Reiki &dtrif;</a>
+                    <ul class="dropdown">
+                      <li><a href="reikihistory.html">What is Reiki?</a>
+                          <li><a href="reikihistory.html">How Does Reiki Work? &dtrif;</a>
+                            <ul class="dropdown">
+                              <li><a href="energy.html">Energy Body &dtrif;</a>
+                                  <ul class="dropdown">
+                                      <li><a href="life.html">Life Force Energy</a></li>
+                                      <li><a href="chakras.html">Chakras</a></li>
+                                      <li><a href="kirillian.html">Kirillian Photography</a></li>
+                                  </ul>
+                              </li>
+                              <li><a href="healing.html">Reiki For Healing</a></li>
+                              <li><a href="learning.html">Learning Reiki</a></li>
+                          </ul>
+                          </li>
+                      <li><a href="reikiwork.html">Reiki History &dtrif;</a>
+                          <ul class="dropdown">
+                            <li><a href="mikao.html">Dr Mikao Usui</a></li>
+                            <li><a href="chujiro.html">Dr Chujiro Hyashi</a></li>
+                            <li><a href="hawaya.html">Hawaya Takata</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="ideals.html">Reiki Ideals</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Services &dtrif;</a>
+                      <ul class="dropdown">
+                          <li><a href="#">Channeling Work</a></li>
+                          <li><a href="#">Aura Clensing</a></li>
+                          <li><a href="#">Energy Balancing</a></li>
+                          <li><a href="#">Chakra Balancing</a></li>
+                          <li><a href="#">Block Removal</a></li>
+                          <li><a href="#">Past Life Regression</a></li>
+                          <li><a href="#">Reiki Healing</a></li>
+                          <li><a href="#">Learn Reiki</a></li>
+                      </ul></li>
+                  <li><a href="#">Contact us</a></li>
+                  <li><a href="#">Upcoming Events</a></li>
+                </ul>
+          </nav>
+      </div>
+    </div>
+
+    <div class="container py-5 px-28 mt-5 mb-6 flex-items-center ">
+        <h3 class="oswald-extra-bold text-6xl text-center tracking-wide underline underline-offset-[7px] decoration-[#973A3A] text-[#01A89E]">USUI SHIKI RYOHO 
+            USUI SYSTEM OF NATURAL HEALING</h3><br>
+
+            <div
+            id="carouselExampleCaptions"
+            class="relative w-full"
+            data-twe-carousel-init
+            data-twe-ride="carousel">
+            <!--Carousel indicators-->
+            <div
+              class="absolute bottom-0 left-0 right-0 z-[2] mx-[15%] mb-4 flex list-none justify-center p-0"
+              data-twe-carousel-indicators>
+              <button
+                type="button"
+                data-twe-target="#carouselExampleCaptions"
+                data-twe-slide-to="0"
+                data-twe-carousel-active
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-current="true"
+                aria-label="Slide 1"></button>
+              <button
+                type="button"
+                data-twe-target="#carouselExampleCaptions"
+                data-twe-slide-to="1"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 2"></button>
+              <button
+                type="button"
+                data-twe-target="#carouselExampleCaptions"
+                data-twe-slide-to="2"
+                class="mx-[3px] box-content h-[3px] w-[30px] flex-initial cursor-pointer border-0 border-y-[10px] border-solid border-transparent bg-white bg-clip-padding p-0 -indent-[999px] opacity-50 transition-opacity duration-[600ms] ease-[cubic-bezier(0.25,0.1,0.25,1.0)] motion-reduce:transition-none"
+                aria-label="Slide 3"></button>
+            </div>
+
+            <!--Carousel items-->
+            <div
+              class="relative w-full overflow-hidden after:clear-both after:block after:content-[''] rounded-2xl">
+              <!--First item-->
+              <div
+                class="relative float-left -mr-[100%] w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none rounded-2xl"
+                data-twe-carousel-active
+                data-twe-carousel-item
+                style="backface-visibility: hidden">
+                <img
+                  src="clams.jpg"
+                  class="block w-full rounded-2xl"
+                  alt="..." />
+                <div
+                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-black md:block">
+                  <h5 class="text-xl">Sample</h5>
+                  <p>
+                    Some representative placeholder content for the first slide.
+                  </p>
+                </div>
+              </div>
+              <!--Second item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none rounded-2xl"
+                data-twe-carousel-item
+                style="backface-visibility: hidden">
+                <img
+                  src="clams.jpg"
+                  class="block w-full rounded-2xl"
+                  alt="..." />
+                <div
+                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                  <h5 class="text-xl">Second slide label</h5>
+                  <p>
+                    Some representative placeholder content for the second slide.
+                  </p>
+                </div>
+              </div>
+              <!--Third item-->
+              <div
+                class="relative float-left -mr-[100%] hidden w-full transition-transform duration-[600ms] ease-in-out motion-reduce:transition-none rounded-2xl"
+                data-twe-carousel-item
+                style="backface-visibility: hidden">
+                <img
+                  src="rocks.jpg"
+                  class="block w-full rounded-2xl"
+                  alt="..." />
+                <div
+                  class="absolute inset-x-[15%] bottom-5 hidden py-5 text-center text-white md:block">
+                  <h5 class="text-xl">Third slide label</h5>
+                  <p>
+                    Some representative placeholder content for the third slide.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <!--Carousel controls - prev item-->
+            <button
+              class="absolute bottom-0 left-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-twe-target="#carouselExampleCaptions"
+              data-twe-slide="prev">
+              <span class="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M15.75 19.5L8.25 12l7.5-7.5" />
+                </svg>
+              </span>
+              <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Previous</span
+              >
+            </button>
+            <!--Carousel controls - next item-->
+            <button
+              class="absolute bottom-0 right-0 top-0 z-[1] flex w-[15%] items-center justify-center border-0 bg-none p-0 text-center text-white opacity-50 transition-opacity duration-150 ease-[cubic-bezier(0.25,0.1,0.25,1.0)] hover:text-white hover:no-underline hover:opacity-90 hover:outline-none focus:text-white focus:no-underline focus:opacity-90 focus:outline-none motion-reduce:transition-none"
+              type="button"
+              data-twe-target="#carouselExampleCaptions"
+              data-twe-slide="next">
+              <span class="inline-block h-8 w-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="h-6 w-6">
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M8.25 4.5l7.5 7.5-7.5 7.5" />
+                </svg>
+              </span>
+              <span
+                class="!absolute !-m-px !h-px !w-px !overflow-hidden !whitespace-nowrap !border-0 !p-0 ![clip:rect(0,0,0,0)]"
+                >Next</span
+              >
+            </button>
+          </div>
+          <br>
+      <br>
+      <br>
+      <br>
+          <div class="">
+            <p class="oswald-extra-bold text-center py-5 text-7xl text-[#01A89E] underline underline-offset-[7px] decoration-[#973A3A]" >The Way to Health, Wealth, Peace, Happiness and Success<br></p>
+            <p class="oswald-extra-bold text-center py-5 text-3xl" style="color: #01A89E;">REIKI IDEALS<br></p>
+            <div class="container">
+              <div class="row">
+
+                <div class="col-md-6">
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LET GO OF ANGER<br></p>
+                  </div>
+
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LET GO OF ALL WORRIES</p>
+                  </div> 
+                </div>
+                
+                <div class="col-md-6">
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">BE THANKFUL FOR ALL YOUR MANY BLESSINGS</p>
+                  </div>
+
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">WORK HONESTLY</p>
+                  </div>
+              </div>
+                <div class="col-md-6">
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">BEKIND TO YOUR NEIGHBOUR AND ALL LIVING BEINGS</p>
+                  </div>
+                </div>
+
+                <div class="col-md-6">
+                  <div class="reiki-card">
+                    <p class="oswald-light2 text-center py-5 text-3xl font-bold" style="color: #01A89E;">LIVE IN HARMONY WITH THE UNIVERSE AND YOURSELF</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+    </div>
+  
+
+    <br><br>
+    <div class="items-center justify-center w-full">
+      <p class="oswald-regular text-center py-5 text-7xl text-[#973A3A]">Our Store</p><br>
+      <p class="oswald-regular text-center py-5 text-6xl text-[#973A3A]">Empower your healing journey with our select Reiki essentials.</p>
+    </div>
+    <div class="flex-items-center">
+      
+    </div>
+    <div class="shell">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img">
+                  <img src="" alt="Product" class="img-responsive" />
+                </div>
+                <div class="wsk-cp-text">
+                  <!-- <div class="category">
+                    <span>Ethnic</span>
+                  </div> -->
+                  <div class="title-product">
+                    <h3>Product 1</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Product Description</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">SGD</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                  
+                  <div class="title-product">
+                    <h3>Product 2</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Product Description</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">SGD</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="" alt="Product" class="img-responsive" /></div>
+                <div class="wsk-cp-text">
+                  
+                  <div class="title-product">
+                    <h3>Product 3</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Product Description</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">SGD</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="wsk-cp-product">
+                <div class="wsk-cp-img"><img src="" alt="Product" class="img-responsive"/></div>
+                <div class="wsk-cp-text">
+                  
+                  <div class="title-product">
+                    <h3>Product 4</h3>
+                  </div>
+                  <div class="description-prod">
+                    <p>Product Description</p>
+                  </div>
+                  <div class="card-footer">
+                    <div class="wcf-left"><span class="price">SGD</span></div>
+                    <div class="wcf-right"><a href="#" class="buy-btn"><i class="zmdi zmdi-shopping-basket"></i></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+      <div class="container px-28 py-2 flex flex-items-center">
+        <div class="flex items-center py-5">
+          <div class="0">
+              <div class="">
+                  <div class="text-center">
+                      <h1 class="text-6xl mb-5 ">What people are saying.</h1>
+                      <h3 class="text-xl mb-5 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit.</h3>
+                      <div class="text-center mb-10">
+                          <span class="inline-block w-1 h-1 rounded-full bg-[#973A3A] ml-1"></span>
+                          <span class="inline-block w-3 h-1 rounded-full bg-[#973A3A] ml-1"></span>
+                          <span class="inline-block w-40 h-1 rounded-full bg-[#973A3A]"></span>
+                          <span class="inline-block w-3 h-1 rounded-full bg-[#973A3A] ml-1"></span>
+                          <span class="inline-block w-1 h-1 rounded-full bg-[#973A3A] ml-1"></span>
+                      </div>
+                      
+                  </div>
+                  <div class="-mx-3 md:flex items-start">
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=1" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos sunt ratione dolor exercitationem minima quas itaque saepe quasi architecto vel! Accusantium, vero sint recusandae cum tempora nemo commodi soluta deleniti.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=2" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum, dolor sit amet, consectetur adipisicing elit. Dolore quod necessitatibus, labore sapiente, est, dignissimos ullam error ipsam sint quam tempora vel.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=3" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae, obcaecati ullam excepturi dicta error deleniti sequi.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=4" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto inventore voluptatum nostrum atque, corrupti, vitae esse id accusamus dignissimos neque reprehenderit natus, hic sequi itaque dicta nisi voluptatem! Culpa, iusto.<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="px-3 md:w-1/3">
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=5" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, voluptatem porro obcaecati dicta, quibusdam sunt ipsum, laboriosam nostrum facere exercitationem pariatur deserunt tempora molestiae assumenda nesciunt alias eius? Illo, autem!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                          <div class="w-full mx-auto rounded-lg bg-white border border-gray-200 p-5 text-gray-800 font-light mb-6">
+                              <div class="w-full flex mb-4 items-center">
+                                  <div class="overflow-hidden rounded-full w-10 h-10 bg-gray-50 border border-gray-200">
+                                      <!-- <img src="https://i.pravatar.cc/100?img=6" alt=""> -->
+                                  </div>
+                                  <div class="flex-grow pl-3">
+                                      <h6 class="font-bold text-sm uppercase text-gray-600">Person</h6>
+                                  </div>
+                              </div>
+                              <div class="w-full">
+                                  <p class="text-sm leading-tight"><span class="text-lg leading-none italic font-bold text-gray-400 mr-1">"</span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem iusto, explicabo, cupiditate quas totam!<span class="text-lg leading-none italic font-bold text-gray-400 ml-1">"</span></p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      </div>
+    <div class="px-28 mt-4 flex-items-center bg-cyan-50">
+        <br>
+        <p class="oswald-regular font-bold text-center mt-5">Disclaimer: Golden Lotus Reiki Centre does not propose to replace any ongoing treatment or medication. The centre only
+            a way to promote the healing process of the body & mind and well being.
+        </p><br><br>
+        <nav class="flex justify-center text-center flex-wrap gap-6 font-medium">
+            <a class="" href="https://facebook.com" alt="facebook"><img src="facebook.svg"></a>
+            <a class="" href="https://youtube.com" alt="youtube"><img src="icons8-youtube.svg"></a>
+            <a class="" href="https://instagram.com" alt="instagram"><img src="instagram.svg"></a>
+        </nav><br><br>
+        <p class="oswald-regular font-bold text-center">Golden Lotus Reiki Centre - All Rights Reserved</p>
+        <br>
+    </div>
+
+    <!-- TW Elements -->
+    <script src="https://cdn.jsdelivr.net/npm/tw-elements/js/tw-elements.umd.min.js"></script>
+    <!-- Snipcart -->
+    <script src="https://cdn.snipcart.com/scripts/checkout.js" data-api-key="YzFiNWExMDMtOGU3Yy00YWIyLWIyNjMtYjc5NzU3Y2NlODA0NjM4NzM1OTU5OTA4MTIwNjkz"></script>
+</body>
+</html>
